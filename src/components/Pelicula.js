@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 
 //Componentes hijos quedan mucho mas limpios por props
 class Pelicula extends Component{
@@ -21,7 +22,7 @@ class Pelicula extends Component{
         <span className="date">
             Hace 5 minutos
         </span>
-        <a href="#">Leer más</a>
+        <Link to="/blog">Leer más</Link>
         <button onClick={this.marcar}> {/*funcion que le envío al padre Peliculas*/}
           Marcar como favorita
         </button>
